@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – SKG Wealth Creations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div id="nav-inner">
+            <a href="index.html" id="logo">
+                <span id="logo-skg">SKG</span>
+                <span id="logo-sub">Wealth Creations</span>
+            </a>
+            <ul id="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="contact.html" class="nav-item active">Contact</a></li>
+            </ul>
+            <button id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <p class="section-tag" style="color: #E6C97A;">Reach Out</p>
+        <h1 class="page-header-title">Let's <em>Connect</em></h1>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="inner-section">
+        <div id="contact-grid">
+
+            <!-- LEFT: CONTACT INFO -->
+            <div id="contact-info">
+                <p class="section-tag">Our Details</p>
+                <h2 class="section-title">Visit or Call Us</h2>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Cabin 02, 31-G, Sarabha Nagar,<br>Ludhiana, Punjab</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:9815120744">98151-20744</a></p>
+                        <p><a href="tel:9855033168">98550-33168</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday – Saturday: 9:00 AM – 7:00 PM</p>
+                        <p>Sunday: By Appointment</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <div>
+                        <h4>Services</h4>
+                        <p>Home Loan · LAP · Car Loan · Life Insurance · Health Insurance · Vehicle Insurance · Mutual Funds · Fixed Deposits</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div id="contact-form-section">
+                <p class="section-tag">Send a Message</p>
+                <h2 class="section-title">Book a Free Consultation</h2>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="form-success" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Thank you! We'll get back to you shortly.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" placeholder="Your full name">
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="Your mobile number">
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com (optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service You're Interested In *</label>
+                        <select id="service">
+                            <option value="">-- Select a service --</option>
+                            <option>Home Loan</option>
+                            <option>LAP Loan</option>
+                            <option>Car Loan</option>
+                            <option>Life Insurance</option>
+                            <option>Health Insurance</option>
+                            <option>Vehicle Insurance</option>
+                            <option>Mutual Funds</option>
+                            <option>Fixed Deposits</option>
+                            <option>General Consultation</option>
+                        </select>
+                        <span class="form-error" id="service-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us briefly about your requirement..."></textarea>
+                    </div>
+                    <button id="submit-btn" class="btn-primary">
+                        Submit Enquiry <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section id="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.0!2d75.8573!3d30.9010!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSarabha+Nagar%2C+Ludhiana!5e0!3m2!1sen!2sin!4v1"
+            width="100%"
+            height="400"
+            style="border: 0; display: block;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div id="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span class="footer-logo-skg">SKG</span>
+                    <span class="footer-logo-sub">Wealth Creations</span>
+                </div>
+                <p>Your trusted financial partner in Ludhiana.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Cabin 02, 31-G, Sarabha Nagar, Ludhiana</p>
+                <p style="margin-top: 0.5rem;"><i class="fa-solid fa-phone"></i> 98151-20744 / 98550-33168</p>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p>© 2025 SKG Wealth Creations. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
