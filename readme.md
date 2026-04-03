@@ -64,15 +64,6 @@ SKG-Wealth-Creations/
 
 ---
 
-## 📤 Deploy to GitHub Pages
-
-1. Push this folder to a GitHub repository
-2. Go to **Settings → Pages**
-3. Set source to: **Branch: main / Folder: / (root)**
-4. Click Save — your site goes live at:
-   `https://your-username.github.io/your-repo-name/`
-
----
 
 ## 📞 Business Info
 
